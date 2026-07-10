@@ -1,57 +1,48 @@
 <!DOCTYPE html>
-<html lang="ur" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>روزنامہ صوتِ قلم ملتان - DAILY SAUT-E-QALAM | ہر لفظ ضمیر کی آواز</title>
-    <meta name="description" content="ملتان بہاولپور خانیوال لاہور راولپنڈی اسلام آباد فیصل آباد کراچی سے بیک وقت شائع ہونے والا مستند قومی اخبار">
-    <meta property="og:title" content="روزنامہ صوتِ قلم ملتان - ہر لفظ ضمیر کی آواز">
-    <meta property="og:description" content="مستند خبریں۔ آن لائن نُمائندگی کے لیے درخواست دیں۔">
+    <title>DAILY SAUT-E-QALAM MULTAN | Voice of Conscience</title>
+    <meta name="description" content="Official Website of Daily Saut-e-Qalam Multan. Published from 7 Cities of Pakistan.">
+    <meta property="og:title" content="DAILY SAUT-E-QALAM MULTAN">
+    <meta property="og:description" content="Official Newspaper - Voice of Conscience">
     <meta property="og:image" content="logo.png">
     <link rel="icon" href="logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Jameel+Noori+Nastaleeq&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background: #f8f5f0; color: #222; font-family: 'Noto Nastaliq Urdu', serif; }
+        body { background: #f4f4f4; color: #222; font-family: 'Roboto', sans-serif; }
         
-        .top-header { background: #800000; color: #fff; padding: 8px 20px; display: flex; justify-content: space-between; font-size: 14px; flex-wrap: wrap; }
+        .top-header { background: #800000; color: #fff; padding: 10px 20px; display: flex; justify-content: space-between; font-size: 14px; }
         
         .main-header { background: #fff; padding: 20px; text-align: center; border-bottom: 4px solid #C9A227; }
-        .main-header img { max-height: 120px; max-width: 90%; }
-        .tagline { color: #800000; font-size: 22px; font-weight: 700; margin-top: 8px; }
-        .contact-info { margin-top: 10px; font-size: 16px; }
-        .contact-info a { color: #800000; text-decoration: none; margin: 0 10px; font-weight: 700; }
+        .main-header img { max-height: 120px; }
+        .tagline-ur { color: #800000; font-size: 24px; font-weight: 700; margin-top: 8px; font-family: 'Noto Nastaliq Urdu', serif; }
+        .contact-info { margin-top: 10px; font-size: 15px; color: #333; }
+        .contact-info a { color: #800000; text-decoration: none; margin: 0 8px; font-weight: 700; }
         
-        .ticker { background: #C9A227; color: #000; padding: 10px; overflow: hidden; white-space: nowrap; font-weight: 700; font-size: 16px; }
+        .ticker { background: #C9A227; color: #000; padding: 10px; overflow: hidden; white-space: nowrap; font-weight: 700; }
         .ticker span { display: inline-block; animation: scroll 25s linear infinite; }
         @keyframes scroll { from {transform: translateX(100%);} to {transform: translateX(-100%);} }
         
-        nav { background: #800000; display: flex; justify-content: center; gap: 25px; padding: 14px; flex-wrap: wrap; }
-        nav a { color: #fff; text-decoration: none; font-size: 17px; font-weight: 700; transition: 0.3s; }
+        nav { background: #800000; display: flex; justify-content: center; gap: 30px; padding: 14px; flex-wrap: wrap; }
+        nav a { color: #fff; text-decoration: none; font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
         nav a:hover { color: #C9A227; }
         
         .container { max-width: 1250px; margin: 25px auto; padding: 0 15px; display: grid; grid-template-columns: 2.2fr 1fr; gap: 20px; }
         
-        .main-content { background: #fff; padding: 30px; border: 1px solid #ddd; border-top: 5px solid #800000; border-radius: 5px; }
-        .main-content h2 { color: #800000; border-bottom: 3px solid #C9A227; padding-bottom: 10px; margin-bottom: 20px; font-size: 26px; }
-        .main-content p { font-size: 18px; line-height: 2; text-align: justify; }
+        .main-content { background: #fff; padding: 30px; border: 1px solid #ddd; border-top: 5px solid #800000; }
+        .main-content h2 { color: #800000; border-bottom: 3px solid #C9A227; padding-bottom: 10px; margin-bottom: 20px; font-size: 24px; }
+        .urdu-text { font-family: 'Noto Nastaliq Urdu', serif; font-size: 20px; line-height: 2; text-align: right; direction: rtl; }
         
-        .sidebar .box { background: #fff; padding: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-right: 5px solid #800000; border-radius: 5px; }
-        .sidebar h3 { color: #800000; margin-bottom: 15px; font-size: 20px; border-bottom: 2px solid #C9A227; padding-bottom: 8px; }
+        .sidebar .box { background: #fff; padding: 20px; margin-bottom: 20px; border: 1px solid #ddd; border-left: 5px solid #800000; }
+        .sidebar h3 { color: #800000; margin-bottom: 15px; font-size: 18px; text-transform: uppercase; }
         
-        .verify-box input { width: 100%; padding: 12px; margin-bottom: 10px; border: 2px solid #800000; background: #fdfdfd; border-radius: 4px; }
-        .verify-box button { width: 100%; padding: 12px; background: #800000; color: #fff; border: none; font-size: 16px; font-weight: 700; cursor: pointer; border-radius: 4px; }
-        
-        .form input, .form select { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; background: #fdfdfd; border-radius: 4px; }
-        .form label { font-size: 14px; display: block; margin-bottom: 5px; }
-        .form button { width: 100%; padding: 14px; background: #C9A227; color: #000; border: none; font-size: 17px; font-weight: 700; cursor: pointer; border-radius: 4px; }
-        .form button:hover { background: #b38f1f; }
-        
-        .person { margin-bottom: 15px; padding: 10px; background: #fdfdfd; border-radius: 4px; }
-        .person b { color: #800000; }
+        .form input, .form select { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; }
+        .form button { width: 100%; padding: 12px; background: #800000; color: #fff; border: none; font-size: 16px; font-weight: 700; cursor: pointer; }
         
         footer { background: #222; color: #ccc; text-align: center; padding: 25px; margin-top: 30px; border-top: 5px solid #C9A227; }
-        footer a { color: #C9A227; text-decoration: none; }
         
         @media (max-width: 900px) { .container { grid-template-columns: 1fr; } }
     </style>
@@ -59,87 +50,68 @@
 <body>
 
     <div class="top-header">
-        <span>اتوار، 4 مئی 2026 | 5 ذوالقعدہ 1447ھ</span>
-        <span>ایڈیشن: ملتان | قیمت: 10 روپے</span>
+        <span>Sunday, May 4, 2026 | 5 Dhul-Qadah 1447 AH</span>
+        <span>Edition: Multan | Price: PKR 10</span>
     </div>
 
     <div class="main-header">
-        <img src="logo.png" alt="روزنامہ صوتِ قلم">
-        <div class="tagline">ہر لفظ ضمیر کی آواز</div>
+        <img src="logo.png" alt="Daily Saut-e-Qalam">
+        <div class="tagline-ur">ہر لفظ ضمیر کی آواز</div>
         <div class="contact-info">
-            رابطہ: <a href="tel:03005614182">0300-5614182</a> | <a href="tel:03066632477">0306-6632477</a> | ای میل: asadabbastarar5615@gmail.com
+            Contact: <a href="tel:03005614182">0300-5614182</a> | <a href="tel:03066632477">0306-6632477</a> | Email: asadabbastarar5615@gmail.com
         </div>
     </div>
 
     <div class="ticker">
-        <span>تازہ ترین: ملتان میں میٹرو بس سروس کا آغاز | وزیراعلیٰ پنجاب کا شہر کا دورہ | موسم: درجہ حرارت 38 ڈگری | کھیل: پاکستان نے سیریز جیت لی</span>
+        <span>LATEST: Metro Bus Service Launched in Multan | CM Punjab Visits City | Weather: 38 Degrees</span>
     </div>
 
     <nav>
-        <a href="#">ہوم</a>
-        <a href="#">تہریر و اداریہ</a>
-        <a href="#">مقامی خبریں</a>
-        <a href="#">ملک و بیرون ملک</a>
-        <a href="#">کالم</a>
-        <a href="#">نُمائندگان</a>
-        <a href="#">آن لائن درخواست</a>
-        <a href="#">رابطہ</a>
+        <a href="#">Home</a>
+        <a href="#">Editorial</a>
+        <a href="#">Local News</a>
+        <a href="#">National & International</a>
+        <a href="#">Columns</a>
+        <a href="#">Representatives</a>
+        <a href="#">Online Application</a>
+        <a href="#">Contact Us</a>
     </nav>
 
     <div class="container">
         <div class="main-content">
-            <h2>اداریہ: حق اور سچ کی آواز</h2>
-            <p>روزنامہ صوتِ قلم کا مقصد عوام کو بے لاگ، غیر جانبدار اور مستند خبریں فراہم کرنا ہے۔ ہم ضمیر کی آواز بن کر معاشرے کی اصلاح اور حق کے پرچار کے لیے کوشاں ہیں۔ صحافت ہماری عبادت اور قلم ہماری امانت ہے۔ ملتان سے شائع ہو کر ہم 7 بڑے شہروں تک اپنی آواز پہنچا رہے ہیں۔</p>
-            <br>
-            <h2>اہم خبریں</h2>
-            <p>یہاں آپ کی روزانہ کی خبریں اپڈیٹ ہوں گی۔ ان شاءاللہ جلد ہم آپ کو ایک مکمل نیوز پینل بھی دیں گے جس سے آپ خود خبریں لگا سکیں گے۔</p>
+            <h2>Editorial</h2>
+            <div class="urdu-text">
+                <p>روزنامہ صوتِ قلم کا مقصد عوام کو بے لاگ اور غیر جانبدار خبریں فراہم کرنا ہے۔ ہم ضمیر کی آواز بن کر معاشرے کی اصلاح کے لیے کوشاں ہیں۔ صحافت ہماری عبادت ہے۔</p>
+            </div>
         </div>
 
         <div class="sidebar">
-            <div class="box verify-box">
-                <h3>🔍 نُمائندہ تصدیق سسٹم</h3>
-                <p>اپنا شناختی کارڈ نمبر درج کریں</p>
-                <input type="text" placeholder="33100-1234567-1">
-                <button>تصدیق کریں</button>
+            <div class="box">
+                <h3>Representative Verification</h3>
+                <div class="form">
+                    <input type="text" placeholder="Enter CNIC Number">
+                    <button>Verify</button>
+                </div>
             </div>
 
             <div class="box">
-                <h3>📝 آن لائن درخواست برائے نُمائندگی</h3>
+                <h3>Online Application</h3>
                 <form class="form" action="https://formsubmit.co/asadabbastarar5615@gmail.com" method="POST" enctype="multipart/form-data">
-                    <input type="hidden" name="_subject" value="نئی نُمائندہ درخواست - روزنامہ صوت قلم">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="text" name="مکمل نام" placeholder="مکمل نام" required>
-                    <input type="text" name="شناختی کارڈ نمبر" placeholder="شناختی کارڈ نمبر" required>
-                    <input type="text" name="شہر / ضلع" placeholder="شہر / ضلع" required>
-                    <input type="text" name="فون نمبر" placeholder="فون نمبر" required>
-                    <select name="عہدہ">
-                        <option>عہدہ منتخب کریں</option>
-                        <option>رپورٹر</option>
-                        <option>بیورو چیف</option>
-                        <option>فوٹوگرافر</option>
-                        <option>نمائندہ خصوصی</option>
-                    </select>
-                    <label>فیس کی رسید Upload:</label><input type="file" name="فیس رسید">
-                    <label>پریس کارڈ فرنٹ+بیک:</label><input type="file" name="پریس کارڈ">
-                    <label>اپنی تصویر:</label><input type="file" name="تصویر">
-                    <button type="submit">درخواست جمع کروائیں</button>
+                    <input type="hidden" name="_subject" value="New Representative Application - Saut-e-Qalam">
+                    <input type="text" name="Full Name" placeholder="Full Name" required>
+                    <input type="text" name="CNIC" placeholder="CNIC Number" required>
+                    <input type="text" name="City" placeholder="City / District" required>
+                    <input type="text" name="Phone" placeholder="Phone Number" required>
+                    <select name="Designation"><option>Select Designation</option><option>Reporter</option><option>Bureau Chief</option></select>
+                    <button type="submit">Submit Application</button>
                 </form>
-            </div>
-
-            <div class="box">
-                <h3>👤 انتظامیہ</h3>
-                <div class="person"><b>چیف ایڈیٹر:</b> محترم جناب اسد عباس تردز صاحب</div>
-                <div class="person"><b>ڈپٹی چیف ایڈیٹر:</b> محترم جناب رانا سہیل نواز صاحب</div>
-                <div class="person"><b>لیگل ایڈوائزر:</b> محمد ولید خان خاکوانی ایڈوکیٹ ہائی کورٹ</div>
             </div>
         </div>
     </div>
 
     <footer>
-        <h3 style="color:#C9A227; margin-bottom:10px;">ملتان بہاولپور خانیوال لاہور راولپنڈی اسلام آباد فیصل آباد کراچی</h3>
-        <p>سے بیک وقت شائع ہونے والا واحد اخبار</p>
-        <p style="margin-top:10px;"><a href="tel:03005614182">0300-5614182</a> | <a href="tel:03066632477">0306-6632477</a></p>
-        <p style="margin-top:15px;">© 2026 روزنامہ صوتِ قلم ملتان۔ جملہ حقوق محفوظ ہیں۔</p>
+        <p>Published Simultaneously from Multan, Bahawalpur, Khanewal, Lahore, Rawalpindi, Islamabad, Faisalabad, Karachi</p>
+        <p style="margin-top:10px;">© 2026 DAILY SAUT-E-QALAM MULTAN. All Rights Reserved.</p>
     </footer>
 
 </body>
