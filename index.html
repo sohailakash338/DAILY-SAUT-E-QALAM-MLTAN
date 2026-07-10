@@ -1,30 +1,148 @@
 <!DOCTYPE html>
 <html lang="ur" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily Multan Express</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO + WhatsApp / Facebook Preview -->
+    <title>روزنامہ صوتِ قلم ملتان - DAILY SAUT-E-QALAM | ہر لفظ ضمیر کی آواز</title>
+    <meta name="description" content="ملتان بہاولپور خانیوال لاہور راولپنڈی اسلام آباد فیصل آباد کراچی سے بیک وقت شائع ہونے والا واحد اخبار۔ نُمائندہ تصدیق اور آن لائن درخواست۔">
+    <meta name="keywords" content="روزنامہ صوت قلم, Saut e Qalam, Multan News, Newspaper">
+    
+    <!-- Open Graph / WhatsApp / Facebook -->
+    <meta property="og:title" content="روزنامہ صوتِ قلم ملتان - ہر لفظ ضمیر کی آواز">
+    <meta property="og:description" content="ملتان سے شائع ہونے والا مستند اخبار۔ اب آن لائن نُمائندگی کے لیے درخواست دیں۔">
+    <meta property="og:image" content="https://آپ_کی_ویب_سائٹ_کا_لنک/logo.png">
+    <meta property="og:url" content="https://آپ_کی_ویب_سائٹ_کا_لنک">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Noto Nastaliq Urdu', serif; }
+        body { background: #0a0a0a; color: #fff; }
+        .top-bar { background: #000; padding: 8px; text-align: center; font-size: 14px; color: #ccc; border-bottom: 2px solid #00aaff; }
+        header { background: linear-gradient(180deg, #000 0%, #111 100%); padding: 15px 0; text-align: center; border-bottom: 3px solid #00aaff; }
+        header img { max-width: 100%; height: auto; max-height: 120px; }
+        .tagline { color: #00aaff; font-size: 18px; margin-top: 5px; font-weight: 700; }
+        .contact-header { margin-top: 10px; font-size: 15px; color: #fff; }
+        .contact-header a { color: #00aaff; text-decoration: none; }
+        nav { background: #001a33; padding: 12px; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; box-shadow: 0 4px 10px rgba(0,170,255,0.3); }
+        nav a { color: #fff; text-decoration: none; font-size: 16px; font-weight: 700; transition: 0.3s; }
+        nav a:hover { color: #00aaff; text-shadow: 0 0 8px #00aaff; }
+        .hero { background: #111; padding: 60px 20px; text-align: center; border-bottom: 1px solid #00aaff; }
+        .hero h1 { font-size: 32px; color: #00aaff; text-shadow: 0 0 15px #00aaff; }
+        .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+        .section { background: #111; border: 1px solid #00aaff; border-radius: 8px; padding: 25px; margin-bottom: 30px; box-shadow: 0 0 20px rgba(0,170,255,0.2); }
+        .section h2 { color: #00aaff; border-right: 4px solid #00aaff; padding-right: 15px; margin-bottom: 20px; font-size: 24px; }
+        .verify-box { background: #001a33; padding: 20px; border-radius: 5px; text-align: center; }
+        .verify-box input { padding: 12px; width: 60%; border: 2px solid #00aaff; background: #000; color: #fff; border-radius: 5px; font-size: 16px; }
+        .verify-box button { padding: 12px 25px; background: #00aaff; border: none; color: #000; font-weight: 700; border-radius: 5px; cursor: pointer; margin-right: 10px; }
+        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .form-grid input, .form-grid select { padding: 10px; background: #000; border: 1px solid #444; color: #fff; border-radius: 5px; }
+        .form-grid label { font-size: 14px; }
+        .form-grid button { grid-column: span 2; padding: 15px; background: linear-gradient(90deg, #00aaff, #0088cc); border: none; color: #000; font-size: 18px; font-weight: 700; cursor: pointer; }
+        .management { display: flex; justify-content: space-around; text-align: center; flex-wrap: wrap; gap: 15px; }
+        .person { background: #001a33; padding: 15px; border-radius: 8px; width: 45%; min-width: 250px; }
+        .person h3 { color: #00aaff; }
+        footer { background: #000; text-align: center; padding: 25px; margin-top: 40px; border-top: 2px solid #00aaff; color: #aaa; }
+        footer a { color: #00aaff; text-decoration: none; font-size: 18px; }
+    </style>
 </head>
 <body>
-<header>
-<h1>DAILY MULTAN EXPRESS</h1>
-<p>سچ کی رفتار</p>
-</header>
 
-<main>
-<h2>خوش آمدید</h2>
-<p>یہ ڈیلی ملتان ایکسپریس کی نمونہ ویب سائٹ ہے۔</p>
+    <div class="top-bar">
+        ملتان بہاولپور خانیوال لاہور راولپنڈی اسلام آباد فیصل آباد کراچی سے بیک وقت شائع ہونے والا واحد اخبار
+    </div>
 
-<h3>ادارے کی معلومات</h3>
-<p>یہاں آپ ادارے، نمائندگان، پریس کارڈ ویریفکیشن اور رابطہ معلومات شامل کر سکتے ہیں۔</p>
+    <header>
+        <img src="logo.png" alt="روزنامہ صوتِ قلم">
+        <div class="tagline">ہر لفظ ضمیر کی آواز</div>
+        <div class="contact-header">
+            رابطہ: <a href="tel:03005614182">0300-5614182</a> | <a href="tel:03066632477">0306-6632477</a>
+        </div>
+    </header>
 
-<h3>پریس کارڈ ویریفکیشن</h3>
-<p>اس صفحے کو QR کوڈ کے ساتھ منسلک کیا جا سکتا ہے۔</p>
-</main>
+    <nav>
+        <a href="#">ہوم</a>
+        <a href="#">ادارہ</a>
+        <a href="#">نُمائندگان</a>
+        <a href="#">تصدیق</a>
+        <a href="#">درخواست</a>
+        <a href="#">رابطہ</a>
+    </nav>
 
-<footer>
-<p>© Daily Multan Express</p>
-</footer>
+    <div class="hero">
+        <h1>ملتان کی آواز، حق کی پہچان</h1>
+    </div>
+
+    <div class="container">
+        
+        <div class="section">
+            <h2>🔍 نُمائندہ تصدیق سسٹم</h2>
+            <div class="verify-box">
+                <p>اپنا شناختی کارڈ نمبر لکھ کر تصدیق کریں</p>
+                <br>
+                <input type="text" placeholder="مثال: 33100-1234567-1">
+                <button>تصدیق کریں</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📝 آن لائن درخواست برائے نُمائندگی</h2>
+            <form class="form-grid" action="https://formsubmit.co/asadabbastarar5615@gmail.com" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="_subject" value="نئی نُمائندہ درخواست - روزنامہ صوت قلم">
+                <input type="hidden" name="_captcha" value="false">
+                
+                <input type="text" name="مکمل نام" placeholder="مکمل نام" required>
+                <input type="text" name="شناختی کارڈ نمبر" placeholder="شناختی کارڈ نمبر" required>
+                <input type="text" name="شہر / ضلع" placeholder="شہر / ضلع" required>
+                <input type="text" name="فون نمبر" placeholder="فون نمبر" required>
+                
+                <select name="عہدہ">
+                    <option>عہدہ منتخب کریں</option>
+                    <option>رپورٹر</option>
+                    <option>بیورو چیف</option>
+                    <option>فوٹوگرافر</option>
+                    <option>نمائندہ خصوصی</option>
+                </select>
+                
+                <label>فیس کی رسید Upload: <input type="file" name="فیس رسید"></label>
+                <label>پریس کارڈ فرنٹ+بیک: <input type="file" name="پریس کارڈ"></label>
+                <label>اپنی تصویر: <input type="file" name="تصویر"></label>
+                
+                <button type="submit">درخواست جمع کروائیں</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>👤 انتظامیہ</h2>
+            <div class="management">
+                <div class="person">
+                    <h3>چیف ایڈیٹر</h3>
+                    <p>  اسد عباس تردز </p>
+                </div>
+                <div class="person">
+                    <h3>ڈپٹی چیف ایڈیٹر</h3>
+                    <p>  رانا سہیل نواز </p>
+                </div>
+            </div>
+            <p style="text-align:center; margin-top:15px;"><b>لیگل ایڈوائزر:</b> محمد ولید خان خاکوانی ایڈوکیٹ ہائی کورٹ</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <h3 style="color:#00aaff; margin-bottom:10px;">رابطہ کریں</h3>
+        <p><a href="tel:03005614182">0300-5614182</a> | <a href="tel:03066632477">0306-6632477</a></p>
+        <p style="margin-top:10px;">ای میل: asadabbastarar5615@gmail.com</p>
+        <p style="margin-top:15px;">© 2026 روزنامہ صوتِ قلم ملتان۔ جملہ حقوق محفوظ ہیں۔</p>
+    </footer>
+
 </body>
 </html>
